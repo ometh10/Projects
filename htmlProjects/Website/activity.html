@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container2 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/activity-background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar-Act{
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .logo-Act{
+                width: 100px;
+                cursor: pointer;
+        }
+        .logo-Act a{
+                color: beige;
+                text-decoration: none;
+        }
+        .navbar-Act ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+        }
+        .navbar-Act ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+        }
+        .navbar-Act ul li:after {
+            content: "";
+            height: 3px;
+            width: 0;
+            background: bisque;
+            right: 0;
+            position: absolute;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar-Act ul li:hover:after {
+            width: 100%;
+        }
+        .row{
+            display: flex;
+            height: 25%;
+            padding: 5%;
+            align-items: center;
+        }
+        .col{
+            flex-basis: 50%;
+        }
+        .col2{
+            flex-basis: 50%;
+            text-align: right;    
+        }
+        .container3 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/activity-background2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .col3{
+            flex-basis: 50%;
+            text-align: center;
+            font-style: italic;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 1s;
+        }
+        .card1{
+            background-image: url(images/tennis1.jpg);
+        }
+        .card2 {
+            background-image: url(images/tennis2.jpg);
+        }
+        .card3{
+            background-image: url(images/tennis3.jpg);
+        }
+        .card4{
+            background-image: url(images/tennis4.jpg);
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .link{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        /*Media Queries*/
+        @media (max-width: 768px) {
+            .card {
+                    width: auto;
+                    height: auto;
+                }
+                .row {
+                    height: auto;
+                }
+        }
+        @media (max-width: 480px) {
+                .col {
+                    align-items: center;
+                }
+                iframe {
+                    width: 150px;
+                    height: 100px;
+                }
+                .row {
+                    height: auto;
+                }
+                .card {
+                    width: auto;
+                    height: auto;
+                }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container2">
+        <div class="navbar-Act">
+            <h1 class="logo-Act"><a href="activity.html">Favourite Activity Page</a></h1>
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hometown.html">Home Town</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1 style="color: whitesmoke; font-size: 75px; font-style: italic;">Tennis</h1>
+                <p style="color: bisque; font-size: 14px;">Tennis, my favorite sport, is a captivating dance between precision and power. 
+                    The rhythmic exchange of forehands and backhands, the swift movement on the court, and the exhilarating rallies all contribute to 
+                    the unique allure of tennis. The game demands not only physical prowess but also mental acuity, as strategic thinking plays a crucial 
+                    role in outsmarting opponents. Whether engaging in singles matches for a test of individual skill or doubles for the camaraderie, tennis 
+                    provides a holistic and rewarding experience. The satisfying thud of the ball meeting the racket, the thrill of a well-executed serve, and 
+                    the joy of a perfectly placed winner make every moment on the tennis court a celebration of skill, strategy, 
+                    and the sheer joy of the game.</p>
+            </div>
+            <div class="col2">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/FQ801OGxBEM?si=uTMzV9FhRundYle-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+            <h1 style="text-align: center; padding: 5%; color: #b3e7eb; font-size: 50px; text-transform: uppercase;">Tennis' Grand Slams</h1>
+            <div class="col3">
+                <div class="card card1" style="color: aliceblue;">
+                    <h1 >Australian Open</h>
+                        <h3> <a href="https://ausopen.com/" target="_blank" style="color: aliceblue;">View site.</a></h3>
+                    
+                </div>
+                <div class="card card2" style="color: aliceblue;">
+                    <h1>French Open</h1>
+                    <h3> <a href="https://www.rolandgarros.com/en-us/" target="_blank" style="color: aliceblue;">View site.</a></h3>
+    
+                </div>
+                <div class="card card3" style="color: aliceblue;">
+                    <h1>Wimbledon</h1>
+                    <h3> <a href="https://www.wimbledon.com/index.html" target="_blank" style="color: aliceblue;">View site.</a></h3>
+                    
+                </div>
+                <div class="card card4" style="color: aliceblue;">
+                    <h1>US Open</h1>
+                    <h3> <a href="https://www.usopen.org/index.html" target="_blank" style="color: aliceblue;">View site.</a></h3>
+                </div>    
+            </div>
+    </div>
+</body>
+</html>

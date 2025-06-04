@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MVCInventoryManagement",
+            "request": "launch",
+            "mainClass": "MVCInventoryManagement",
+            "projectName": "project_B_a2c0b8f4",
+            "vmArgs": "--module-path \"e:\\UTS\\Programming 2\\javafx-sdk-22\\lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        
+    ]
+}
