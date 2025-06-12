@@ -1,0 +1,10 @@
+^E:\PROJECTS\COMPILER\BUILD\CMAKEFILES\C61422E9B78F31E8631BCD332ACCFBB7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/Compiler -BE:/Projects/Compiler/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/Compiler/build/nitro.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

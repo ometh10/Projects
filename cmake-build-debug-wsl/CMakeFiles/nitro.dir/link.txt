@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/nitro.dir/link.d CMakeFiles/nitro.dir/src/main.cpp.o -o nitro

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nitro.dir\\Debug\\main.obj",
+            "outputs": [
+                "E:\\Projects\\Compiler\\build\\nitro.dir\\Debug\\vc143.pdb",
+                "nitro.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}
